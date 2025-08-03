@@ -1,1 +1,8 @@
+Made a Grumpy Cat landing page using Cursor <br>
+Prompt: You are a professional software developer with 10 years of frontend and UX experience. Build an interactive "Don't Click the Cat!" website in 3 separate files: index.html, style.css, and script.js.
 
+Functionality: Users click a cat emoji and it progressively gets angrier (😸 → 😾 → 😡 → 💀) with changing messages, animations, and visual effects. Include click counter, reset button, and double-click easter egg for rainbow cat effect.
+
+Design: Fun, colorful design with rainbow gradient background, bouncing title, shake animations, Comic Sans font, and smooth transitions. Keep it playful and educational.
+
+Keep code clean and well-commented. Do not add extra elements beyond core functionality.

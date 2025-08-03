@@ -1,0 +1,101 @@
+/* Fun, playful, and colorful design with Comic Sans */
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffb347, #ffccff, #6ec6ff, #baffc9, #ffb347, #ffccff, #6ec6ff, #baffc9);
+    background-size: 400% 400%;
+    animation: rainbowBG 10s ease-in-out infinite;
+  }
+  
+  @keyframes rainbowBG {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  #title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    animation: bounce 1.5s infinite;
+    text-align: center;
+    user-select: none;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(-20px);}
+  }
+  
+  #cat-container {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #cat {
+    font-size: 6rem;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.3s;
+    user-select: none;
+    outline: none;
+    display: inline-block;
+  }
+  
+  #cat.shake {
+    animation: shake 0.4s;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg);}
+    20% { transform: translate(-10px, 0) rotate(-10deg);}
+    40% { transform: translate(10px, 0) rotate(10deg);}
+    60% { transform: translate(-10px, 0) rotate(-10deg);}
+    80% { transform: translate(10px, 0) rotate(10deg);}
+    100% { transform: translate(0, 0) rotate(0deg);}
+  }
+  
+  #cat.rainbow {
+    animation: rainbowCat 1.2s linear infinite;
+    filter: drop-shadow(0 0 20px #fff176);
+  }
+  
+  @keyframes rainbowCat {
+    0% { filter: hue-rotate(0deg) drop-shadow(0 0 20px #fff176);}
+    100% { filter: hue-rotate(360deg) drop-shadow(0 0 20px #fff176);}
+  }
+  
+  #message {
+    font-size: 1.3rem;
+    margin: 1rem 0 0.5rem 0;
+    text-align: center;
+    min-height: 2em;
+    transition: color 0.3s;
+  }
+  
+  #counter {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  #reset {
+    font-size: 1rem;
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ffb347, #ffccff, #6ec6ff, #baffc9);
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  #reset:hover {
+    background: linear-gradient(90deg, #baffc9, #6ec6ff, #ffccff, #ffb347);
+    transform: scale(1.07);
+  }
